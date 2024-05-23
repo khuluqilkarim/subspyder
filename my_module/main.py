@@ -13,6 +13,7 @@ def install_subfinder():
         print("\033[93mSubfinder is not installed. Installing...\033[0m")
         subprocess.run(['go', 'install', '-v', 'github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest'], check=True)
         print("\033[92mSubfinder installed successfully.\033[0m")
+        print("Reload your terminal")
     except subprocess.CalledProcessError as e:
         print(f"Error occurred while installing subfinder: {e}")
 
@@ -46,7 +47,6 @@ def get_subdomains(address):
     except FileNotFoundError:
         print("Subfinder is not installed. Attempting to install...")
         install_subfinder()
-        get_subdomains(address)
     except requests.RequestException as e:
         print(f"Error occurred while fetching the URL: {e}")
 
