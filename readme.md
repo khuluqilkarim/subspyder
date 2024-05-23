@@ -18,20 +18,6 @@ You can use this to install Golang on your OS.
 chmod +x install_go.sh
 ./install_go.sh
 ```
-add this in your bashrc or zshrc 
-
-```bash
-export PATH=$PATH:/usr/local/go/bin
-```
-Reload your shell configuration to apply the changes:
-```bash
-source ~/.bashrc
-```
-# Usage 
-
-```bash
-subspyder -u domain.com
-```
 
 # Support 
 If you find SubSpyder helpful, consider supporting its development: [trakteer.id](https://trakteer.id/khuluqilkarim/tip)
