@@ -11,9 +11,7 @@ import subprocess
 def install_subfinder():
     try:
         print("\033[93mSubfinder is not installed. Installing...\033[0m")
-        subprocess.run(['go', 'install', '-v', 'github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest'], check=True)
-        print("\033[92mSubfinder installed successfully.\033[0m")
-        print("Reload your terminal")
+        print("\033[92mPlease run install_go.sh to install golang and subfinder\033[0m")
     except subprocess.CalledProcessError as e:
         print(f"Error occurred while installing subfinder: {e}")
 
