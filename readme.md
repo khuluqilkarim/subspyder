@@ -23,6 +23,10 @@ add this in your bashrc or zshrc
 ```bash
 export PATH=$PATH:/usr/local/go/bin
 ```
+Reload your shell configuration to apply the changes:
+```bash
+source ~/.bashrc
+```
 # Usage 
 
 ```bash
